@@ -1,0 +1,27 @@
+---
+
+authorize: /Users/ME/.ssh/id_rsa.pub
+
+keys:
+    - /Users/ME/.ssh/id_rsa
+
+ip: 192.168.22.22
+
+ports:
+
+    - from: 80
+      to: 8080
+
+    - from: 3306
+      to: 33066
+
+
+folders:
+
+    - from: /Users/ME/code
+      to: /sync
+
+sites:
+
+    - url: app.dev
+      root: /sync/harbor/public
