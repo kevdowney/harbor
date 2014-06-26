@@ -1,5 +1,8 @@
 # Senary Harbor
 
+*Senary is a Hack framework for building scalable software. It is currently a work in progress, but I've open sourced the dev environment
+I'm using to work on it. Idea and code was taken from Laravel's Homestead, see info at the bottom.*
+
 Vagrant virtual environment for Senary Framework and Hack language. Includes:
 
 - HHVM (fastcgi)
