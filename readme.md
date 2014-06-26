@@ -12,7 +12,7 @@ Vagrant virtual environment for Senary Framework and Hack language. Includes:
 
 ### Installation
 
-Make sure you have [https://www.virtualbox.org/](VirtualBox) and [http://www.vagrantup.com/](Vagrant) installed.
+Make sure you have [VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/) installed.
 
 Add the `senary/harbor` box:
 
@@ -37,7 +37,7 @@ Setup sites.
 
 ----------------------------------------------------------------------------
 
-### Connecting to Harbor
+### Working w/ Harbor
 
 SSH: *(if you changed the ip in settings.yml, use that value instead)*
 
@@ -52,6 +52,10 @@ MySQL:
 - password is root
 - Either connect to 192.168.22.22 on port 3306 (or different ip from settings.yml)
 - Can also connect via localhost at port 33060
+
+Adding sites after box is running, SSH into Harbor and run:
+
+    $ serve url.app /sync/path/to/public
 
 ----------------------------------------------------------------------------
 
