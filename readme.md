@@ -1,19 +1,15 @@
 # Senary Harbor
 
-*Senary is a Hack framework for building scalable software. It is currently a work in progress, but I've open sourced the dev environment
-I'm using to work on it. Idea and code was taken from Laravel's Homestead, see info at the bottom.*
-
 Vagrant virtual environment for Senary Framework and Hack language. Includes:
 
-- HHVM (fastcgi)
+- HHVM 3.2
 - Nginx
 - Mysql
 - Composer
 - Git
 
--------------------------------------------------------------------------------------------
 
-### Installation
+## Installation
 
 Make sure you have [VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/) installed.
 
@@ -38,9 +34,8 @@ Setup sites.
 - `url` is the server_name value for nginx
 - `root` is the path on the guest machine to the app root
 
-----------------------------------------------------------------------------
 
-### Working w/ Harbor
+## Working w/ Harbor
 
 SSH: *(if you changed the ip in settings.yml, use that value instead)*
 
@@ -51,8 +46,8 @@ SSH: *(if you changed the ip in settings.yml, use that value instead)*
 
 
 MySQL:
-- username is root
-- password is root
+- username is `harbor`
+- password is `secret` *(same for root user)*
 - Either connect to 192.168.22.22 on port 3306 (or different ip from settings.yml)
 - Can also connect via localhost at port 33060
 
@@ -62,5 +57,7 @@ Adding sites after box is running, SSH into Harbor and run:
 
 ----------------------------------------------------------------------------
 
-**This is essentially a port of Laravel Homestead, for HHVM and Hack**
-*See [http://laravel.com/docs/homestead](http://laravel.com/docs/homestead)*
+### *Big Thanks*
+
+*Code and inspiration for this project was taken from Laravel's [Homestead](https://github.com/laravel/homestead).
+Big thanks as well to Chris Fidao and his [Vaprobash](https://github.com/fideloper/vaprobash) project.*
