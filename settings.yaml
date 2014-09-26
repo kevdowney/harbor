@@ -1,9 +1,9 @@
 ---
 
-authorize: /Users/ME/.ssh/id_rsa.pub
+authorize: ~/.ssh/id_rsa.pub
 
 keys:
-    - /Users/ME/.ssh/id_rsa
+    - ~/.ssh/id_rsa
 
 ip: 192.168.22.22
 
@@ -18,7 +18,7 @@ ports:
 
 folders:
 
-    - from: /Users/ME/code
+    - from: ~/code
       to: /sync
 
 sites:
